@@ -1,7 +1,6 @@
 import turtle as trtl
-
 painter = trtl.Turtle()
-
+color = input("Enter the color name you want the triangle to be?") 
 painter.penup()
 painter.goto(-50, 50)
 painter.pendown()
@@ -19,6 +18,8 @@ painter.pendown()
 painter.circle(50, 360)
 painter.penup()
 painter.goto(-40,-25)
+painter.fillcolor(color) 
+painter.begin_fill()
 painter.pendown()
 painter.forward(85)
 painter.left(120)
@@ -27,6 +28,8 @@ painter.forward(85)
 painter.left(120)
 painter.forward(85)
 painter.left(120)
+painter.end_fill()
+
 
 
 wn = trtl.Screen()
